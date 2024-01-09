@@ -8,9 +8,8 @@
 
 body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(#111138, #000015)
+    display: block;
+    background-color: #03032e;
 }
 
 /* Navigation */
@@ -18,13 +17,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 50px;
+    background: linear-gradient(#e2e8f0, #bdadad);
 }
 
 .main-logo {
-    height: 175px;
-    border-radius: 23px;
-    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 7px;
 }
 
 .nav-links {
@@ -39,19 +40,19 @@ a:link {
     list-style-type: none;
     font-size: 1.em;
     font-weight: bold;
-    color: #e2e8f0;
+    color: #111138;
     text-decoration: none;
 }
 
 .nav-links,
 a:visited {
-    color: #e2e8f0;
+    color: #111138;
     text-decoration: none;
 }
 
 .nav-links,
 a:hover {
-    color: #6b8fbe;
+    color: #00ccc2;
 }
 
 .github-logo {
@@ -65,24 +66,47 @@ a:hover {
 }
 
 /* Main */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .main-text {
-    padding: 50px 0px 50px 50px;
+    max-width: 600px;
+    display: block;
+    padding: 40px;
+    margin-right: auto;
     color: #e2e8f0;
+    position: sticky;
 }
 
-.main-text,
-h1 {
-    font-size: 48px;
+.scroll-text {
+    max-width: 700px;
+    display: block;
+    padding: 40px;
+    margin-right: auto;
+    color: #e2e8f0;
+
 }
 
-.main-text,
-h6 {
-    font-size: 24px;
-    padding-bottom: 20px;
+#intro {
+    font-size: 1em;
 }
 
-.main-text,
-p {
+#name {
+    margin-top: -8px;
+    font-size: 4em;
+    font-weight: 800;
+}
 
-    font-size: 16px;
+#title {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+#about {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
