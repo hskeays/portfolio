@@ -4,6 +4,7 @@
     padding: 0px;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /* outline: 1px solid red; */
+    ;
 }
 
 body {
@@ -13,13 +14,18 @@ body {
 }
 
 /* Navigation */
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
-    margin-bottom: 50px;
     background-color: #999999;
+    border-bottom: 2px solid #c9c9c9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .main-logo {
@@ -55,12 +61,13 @@ a:hover {
     color: #c9c9c9;
 }
 
-.github-logo {
+.social-logos {
     height: 30px;
-    width: auto;
+    width: 30px;
+    margin: 0px 2px;
 }
 
-.github-logo:hover {
+.social-logos:hover {
     scale: 1.1;
     transition: .3s;
 }
@@ -68,22 +75,23 @@ a:hover {
 /* Main */
 
 .hero {
+    margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .main-text {
-    max-width: 600px;
+    flex: 1 1 500px;
+    max-width: 500px;
     display: block;
     padding: 40px;
     margin-right: auto;
     color: #c9c9c9;
-    position: sticky;
 }
 
 .scroll-text {
-    max-width: 700px;
+    flex: 2 1 600px;
     display: block;
     padding: 40px;
     margin-right: auto;
