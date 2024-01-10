@@ -8,24 +8,27 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    display: block;
+
     background-color: #03032e;
 }
 
-/* Navigation */
+/* Navigation ******************************/
 
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 0px 20px 0px 20px;
-    background-color: #999999;
-    border-bottom: 2px solid #c9c9c9;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+
+    border-bottom: 2px solid #c9c9c9;
+    background-color: #999999;
 }
 
 .main-logo {
@@ -36,8 +39,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 30px;
     align-items: center;
+    gap: 30px;
     padding: 0px 10px;
 }
 
@@ -46,14 +49,14 @@ a:link {
     list-style-type: none;
     font-size: 1.em;
     font-weight: bold;
-    color: #111138;
     text-decoration: none;
+    color: #111138;
 }
 
 .nav-links,
 a:visited {
-    color: #111138;
     text-decoration: none;
+    color: #111138;
 }
 
 .nav-links,
@@ -72,29 +75,31 @@ a:hover {
     transition: .3s;
 }
 
-/* Main */
+/* Main ***********************************/
 
 .hero {
-    margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 75px;
 }
 
 .main-text {
-    flex: 1 1 500px;
-    max-width: 500px;
     display: block;
+    flex: 1 1 600px;
+    max-width: 600px;
     padding: 40px;
     margin-right: auto;
+
     color: #c9c9c9;
 }
 
 .scroll-text {
-    flex: 2 1 600px;
     display: block;
+    flex: 2 1 600px;
     padding: 40px;
     margin-right: auto;
+
     color: #c9c9c9;
 
 }
@@ -106,16 +111,34 @@ a:hover {
 
 #name {
     margin-top: -5px;
+
     font-size: 3.2em;
     font-weight: 800;
 }
 
 #title {
-    font-size: 1.3em;
     margin-bottom: 20px;
+    font-size: 1.3em;
 }
 
 #about {
-    font-size: 2em;
     margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Footer ***********************************/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+    border-top: 1px solid #c9c9c9;
+    background-color: #999999;
+}
+
+#footer-text {
+    padding-right: 20px;
+    font-size: 10px;
 }
